@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        background-image: url('https://1.bp.blogspot.com/-fyF-OXXEBBY/X1altgmlwQI/AAAAAAAA66s/KVb5Fjlb_f41xu_pEjq5VpDhRWr2QbJFACLcBGAsYHQ/w0/hexagon-blender-4k-22-3840x2160.jpg');
+    background-size: cover;
+    background-image: no-repeat center center fixed;
+    }
+    button {
+        border: 3px solid rgb(4, 52, 92);
+        color: crimson;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 8px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        background: none;
+        font-weight: bold;
+    }
+     input{
+        width: 380px;
+        height: 35px;
+        border: 3px solid rgb(16, 158, 201);
+  border-style: inset;
+  cursor: pointer;
+  background: none;
+  border-radius: 8px;
+  color: aliceblue;
+       
+     
+    }
+
+    input::placeholder{
+        font-size: 20px;
+       text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+       color: rgb(12, 105, 226);
+       font-weight: bold;
+       
+
+    }
+   
+
+input:hover{
+    width: 400px;
+    border: 3px outset rgb(133, 194, 247);
+    border-radius: 10px ;
+}
+
+
+    div{
+        position: relative;
+        top: 200px;
+     
+    }
+    #list{
+        color: aliceblue;
+        font-size: 30px;
+    }
+</style>
+<body>
+    <div>
+        <input placeholder="ENTER TODO" type="text" id="todo-item">
+        <button onclick="addTodo()">ADD ITEM</button>
+        <button onclick="deleteAll()">DELETE ALL</button>
+    </div>
+
+    <div>
+        <ul id="list">
+          
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
